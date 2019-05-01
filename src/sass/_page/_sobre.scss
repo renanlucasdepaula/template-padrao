@@ -1,0 +1,72 @@
+
+%no-decoration{
+    text-decoration: none;
+}
+%btn-color{
+    color:$btn-color;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-shadow: 0px 0px 12px 0px #000000;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 30px;
+
+    &__content{
+        margin: 10px;
+
+        button{
+            width: 100%; 
+            margin: 10px 0;
+            background-color: $btn-color;
+            a{
+                color: $btn-textColor;
+                &:hover{
+                    @extend %no-decoration;
+                }
+                &:active{
+                    @extend %no-decoration;
+                }
+            }
+            i{ 
+                color: $btn-textColor;                
+                font-size: 1.5em;
+                text-align: center;
+            }
+            &:hover{
+                transition: all 0.3s ease-in;
+                background-color: $btn-textColor;
+                i{ 
+                   @extend %btn-color;
+                } 
+                a{ 
+                    @extend %btn-color;
+                } 
+
+            }
+        }
+ 
+        &__image{
+            &>img{
+                width: 300px;
+                height: auto;
+                border-radius: 20px;
+                &:hover{ 
+                    transition: all 0.3s ease-out;
+                    filter: grayscale(100%); 
+                }
+            }
+        }
+        &__text{
+            padding: 0 20px;
+            letter-spacing: 1px;
+            font: {
+                family: 'Raleway', sans-serif;
+                size: 35px;
+            } 
+        }
+    }
+}

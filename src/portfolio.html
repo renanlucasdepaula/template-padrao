@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Couto</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    
+    <script src="components/bootstrap/js/bootstrap.min.js"> </script>
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/popper.js/popper.min.js"></script>
+</head>
+<body> 
+    
+    @@include('./inc/nav.html')
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Últimos Trabalhos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Cria um loop para enviar valores ao arquivo html -->
+            @@loop('inc/card-portfolio.html', [
+            {
+                "titulo":"Projeto 1",
+                "texto":"Meu primeiro Projeto",
+                "imagem":"imagens/portfolio/01.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 2",
+                "texto":"Meu segundo Projeto",
+                "imagem":"imagens/portfolio/02.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 3",
+                "texto":"Meu terceiro Projeto",
+                "imagem":"imagens/portfolio/03.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 4",
+                "texto":"Meu quarto Projeto",
+                "imagem":"imagens/portfolio/04.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 5",
+                "texto":"Meu quinto Projeto",
+                "imagem":"imagens/portfolio/05.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 6",
+                "texto":"Meu sexto Projeto",
+                "imagem":"imagens/portfolio/06.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            },
+            {
+                "titulo":"Projeto 7",
+                "texto":"Meu sétimo Projeto",
+                "imagem":"imagens/portfolio/07.jpg",
+                "link":"#",
+                "alt":"Texto alternativo"
+
+            } 
+            
+            ])
+
+            
+        </div> <!-- row -->
+        
+
+    </div><!-- container -->
+    @@include('./inc/footer.html')
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
